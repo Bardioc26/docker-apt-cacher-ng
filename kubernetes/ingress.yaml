@@ -3,13 +3,13 @@ kind: Ingress
 metadata:
   name: apt-cacher-ng
   annotations:
-    certmanager.k8s.io/cluster-issuer: letsencrypt-staging
+    #certmanager.k8s.io/cluster-issuer: letsencrypt-staging
     kubernetes.io/ingress.class: nginx
 spec:
-  tls:
-  - hosts:
-    - apt.cl.wuenscheonline.de
-    secretName: apt-cacher-ng-tls
+  #tls:
+  #- hosts:
+  #  - apt.cl.wuenscheonline.de
+  #  secretName: apt-cacher-ng-tls
   rules:
   - host: apt.cl.wuenscheonline.de
     http:
