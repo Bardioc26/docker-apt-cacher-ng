@@ -5,7 +5,8 @@ metadata:
   labels:
     name: apt-cacher-ng
 spec:
-  type: LoadBalancer
+  type: ClusterIP
+  #type: LoadBalancer
   ports:
     - port: 3142
       targetPort: 3142
